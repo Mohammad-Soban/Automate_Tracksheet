@@ -3,7 +3,6 @@ import openpyxl
 import pandas as pd
 import numpy as np
 import csv
-import xlwt, xlrd
 from xlutils.copy import copy
 
 def middle_for_cum(file1, output_dir='output'):
