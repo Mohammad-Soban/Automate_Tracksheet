@@ -1,9 +1,8 @@
 import streamlit as st
-import warnings
 import os
 from client_invoice import client_Invoice
 from mt_incentives import MT_incentives
-from Cumulative import Cumulative
+from cumulative import Cumulative
 
 def main():
     st.title("Client Invoice Generator")
@@ -90,6 +89,4 @@ def main():
                     st.error(msg)
 
 if __name__ == "__main__":
-    warnings.filterwarnings("ignore")
-    warnings.simplefilter("ignore")
     main()
