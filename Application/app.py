@@ -2,7 +2,7 @@ import streamlit as st
 import os
 from client_invoice import client_Invoice
 from mt_incentives import MT_incentives
-from cumulative import Cumulative
+from Cumulative import Cumulative
 
 def main():
     st.title("Client Invoice Generator")
