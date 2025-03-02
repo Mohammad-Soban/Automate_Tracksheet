@@ -75,7 +75,12 @@ def Cumulative(file1, output_dir="output"):
                 # Check if the DataFrame has any rows
                 if not df.empty:
                     # Extract the last value of the "Line Count" column
-                    total_Line_Count = df['Line Count'].iloc[-1]
+                    
+                    if source_workbook_path == "./output/Middle_1.xls":
+                        # Sum the "Line Count" column to get the total line count
+                        total_Line_Count = df['Line Count'].sum()
+                    else:
+                        total_Line_Count = df['Line Count'].iloc[-1]
 
                     # Append the result to the summary DataFrame
                     summary_df = pd.concat([
